@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    
+    <div ng-controller="myController">
+        <div ng-view>view1</div>
+
+
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Roll No.</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Date of Birth</th>
+                    <th>Max Marks</th>
+                    <th>Marks Obtained</th>
+                    <th>Physics</th>
+                    <th>Chemistry</th>
+                    <th>Maths</th>
+                    <th>Biology</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="student in students">
+                    <td>{{ student.rollno }}</td>
+                    <td>{{ student.sname }}</td>
+                    <td>{{ student.sage }}</td>
+                    <td>{{ student.sgender }}</td>
+                    <td>{{ student.sdob | date:'yyyy-MM-dd' }}</td>
+                    <td>{{ student.maxmarks }}</td>
+                    <td>{{ student.phy + student.chem + student.math + student.bio }}</td>
+                    <td>{{ student.phy }}</td>
+                    <td>{{ student.chem }}</td>
+                    <td>{{ student.math }}</td>
+                    <td>{{ student.bio }}</td>
+                   
+                </tr>
+            </tbody>
+        </table>
+       
+    </div>
+    <script src="Script/angular.min.js"></script>
+    <script src="Script/angular-route.min.js"></script>
+    <script src="Script/jquery-3.3.1.min.js"></script>
+    <script src="Script/appScript.js"></script>
+
+</body>
+</html>

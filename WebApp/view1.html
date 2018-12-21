@@ -1,0 +1,50 @@
+﻿<div>
+    <h2>View1</h2>
+    <table>
+        <tr>
+            <td class="ind">Name:</td>
+            <td class="inp"><input type="text" ng-model="selectedStudent.sname" /> </td>
+        </tr>
+        <tr>
+            <td class="ind">Age:</td>
+            <td class="inp"><input type="text" ng-model="selectedStudent.sage"/> </td>
+        </tr>
+        <tr>
+            <td class="ind">Gender:</td>
+            <td class="inp"><input type="text" ng-model="selectedStudent.sgender"/> </td>
+        </tr>
+        <tr>
+            <td class="ind">DOB:</td>
+            <td class="inp"><input type="date" ng-model="selectedStudent.sdob"/> </td>
+            <td class="bt"></td>
+        </tr>
+        <tr>
+            <td class="ind">Max Marks:</td>
+            <td class="inp"><input type="text" ng-model="selectedStudent.maxmarks"/> </td>
+            <td class="bt"></td>
+        </tr>
+        <tr>
+            <td class="ind">Physics:</td>
+            <td class="inp"><input type="text" ng-model="selectedStudent.phy"/> </td>
+            <td class="bt"></td>
+        </tr>
+        <tr>
+            <td class="ind">ChemistryB:</td>
+            <td class="inp"><input type="text" ng-model="selectedStudent.chem"/> </td>
+            <td class="bt"></td>
+        </tr>
+        <tr>
+            <td class="ind">Maths:</td>
+            <td class="inp"><input type="text" ng-model="selectedStudent.math"/> </td>
+            <td class="bt"></td>
+        </tr>
+        <tr>
+            <td class="ind">Biology:</td>
+            <td class="inp"><input type="text" ng-model="selectedStudent.bio"/> </td>
+            <td class="bt"></td>
+        </tr>
+        <tr>
+            <td class="bt"><button class="btn btn-success" ng-click="create()">Insert</button></td>
+        </tr>
+    </table>
+</div>
